@@ -24,8 +24,7 @@ public class PrintTest {
   @Test
   public void shouldPrintFunction2() {
     final String expected = "12 / 2";
-    final String result =
-        new ExpressionSet(new Value(12), new Value(2), new Division()).toString();
+    final String result = new ExpressionSet(new Value(12), new Value(2), new Division()).toString();
 
     assertThat(result, equalTo(expected));
   }
